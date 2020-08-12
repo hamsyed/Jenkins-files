@@ -12,7 +12,7 @@ pipeline{
 
                 echo "building ${RELEASE} with ${LOG_INFO} "
             }
-        }
+        }   
 
         stage ('testing') {
             echo "Testing $RELEASE in progress"
