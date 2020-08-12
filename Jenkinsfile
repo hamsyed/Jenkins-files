@@ -31,11 +31,10 @@ pipeline{
                 echo "Deploying in $RELEASE TO environemnt $TARGET_ENV"
             }
         }
+    }   
         post{
             always {
                 echo "Print weither Deployment happened or not,success or fialure "
             }
-        }
-    
-    }
+        }    
 }    
