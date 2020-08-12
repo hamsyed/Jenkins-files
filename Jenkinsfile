@@ -24,12 +24,12 @@ pipeline{
                 message 'Deploy?'
                 ok 'do it'
                 parameters {
-                    string(name: 'TAREGT_ENV', defaultValue: 'prod', description: 'deploying in prod')
+                    string(name: 'TAREGT_ENVIRONMENT', defaultValue: 'prod', description: 'deploying in prod')
                 }
 
             }
             steps {
-                echo "Deploying in $RELEASE TO environemnt $TARGET_ENV"
+                echo "Deploying in $RELEASE TO environemnt $TARGET_ENVIRONMENT"
             }
         }
     }   
