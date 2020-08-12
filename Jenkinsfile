@@ -13,10 +13,10 @@ pipeline{
         }
         stage("job name"){
             steps {
-                sh ' 
+                sh '''
                 echo "my job name is $JOB_NAME" 
                 
-                '
+                '''
             }
         }
     }
