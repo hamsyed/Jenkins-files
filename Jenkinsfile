@@ -15,9 +15,10 @@ pipeline{
         }   
 
         stage ('testing') {
+            steps {
             echo "Testing $RELEASE in progress"
+            } 
         }
-
         stage ('Deploy') {
             input {
                 message 'Deploy?'
